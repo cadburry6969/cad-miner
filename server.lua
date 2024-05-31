@@ -437,3 +437,10 @@ RegisterNetEvent('phone:server:resumePendingJobs', function(source, data)
 		sendNotify(source, 'You continued work: ' .. Config.Party.jobName)
 	end
 end)
+
+pgroup:registerJob({
+	name = Config.Party.jobName,
+	icon = Config.Party.jobIcon,
+	size = Config.Party.jobSize,
+	type = Config.Party.jobType
+})

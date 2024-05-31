@@ -1,9 +1,12 @@
 Config = Config or {}
 
 Config.Party = {
-	minSize = 1,
-	maxSize = 6,
-	jobName = 'Miner',
+	minSize = 1, -- min members required to start the job
+	maxSize = 6, -- max members you can have to start the job
+	jobName = 'Miner', -- job name
+	jobIcon = 'fas fa-gem', -- icon to show when this job is assigned
+	jobType = 'legal', -- Job type: 'legal' , 'illegal'
+	jobSize = 10 -- Max parties for this job
 	jobZones = {
 		['minerwork1'] = {
 			model = `s_m_y_construct_01`,
