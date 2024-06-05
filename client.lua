@@ -670,7 +670,7 @@ CreateThread(function()
 				}
 			}
 		end
-		lib.ped.add(name, {
+		exports['cad-pedspawner']:AddPed(name, {
 			model = data.model,
 			coords = data.coords,
 			type = data.type,
@@ -710,6 +710,6 @@ end
 AddEventHandler('onResourceStop', function(resName)
 	if resName ~= GetCurrentResourceName() then return end
 	for name in pairs(Config.Party.jobZones) do
-		lib.ped.remove(name)
+		exports['cad-pedspawner']:RemovePed(name)
 	end
 end)

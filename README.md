@@ -6,11 +6,12 @@ Mining job for [Snappy Phone's](https://snappy.tebex.io/category/phone) inbuilt 
 Coming Soon!
 
 # Dependencies
-- snappy-phone
-- ox_lib
-- qb-core / es_extended
-- ox_inventory / qb-inventory / ps-inventory / lj-inventory
-- ox_target
+- [snappy-phone](https://snappy.tebex.io/category/phone)
+- [ox_lib](https://github.com/overextended/ox_lib)
+- [qb](https://github.com/qbcore-framework) / [esx](https://github.com/esx-framework/esx_core)
+- [ox_inventory](https://github.com/overextended/ox_inventory) / [qb-inventory](https://github.com/qbcore-framework/qb-inventory) / [ps-inventory](https://github.com/Project-Sloth/ps-inventory) / [lj-inventory](https://github.com/loljoshie/lj-inventory)
+- [ox_target](https://github.com/overextended/ox_target)
+- [cad-pedspawner](https://github.com/cadburry6969/cad-pedspawner)
 
 # Links
 Phone Link: [Click Here](https://snappy.tebex.io/category/phone)

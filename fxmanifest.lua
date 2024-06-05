@@ -15,5 +15,6 @@ server_script 'server.lua'
 
 dependencies {
     '/onesync',
-    'ox_lib'
+    'ox_lib',
+    'cad-pedspawner' -- https://github.com/cadburry6969/cad-pedspawner
 }
