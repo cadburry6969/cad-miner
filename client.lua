@@ -710,6 +710,6 @@ end
 AddEventHandler('onResourceStop', function(resName)
 	if resName ~= GetCurrentResourceName() then return end
 	for name in pairs(Config.Party.jobZones) do
-		exports['cad-pedspawner']:RemovePed(name)
+		exports['cad-pedspawner']:DeletePed(name)
 	end
 end)

@@ -10,8 +10,15 @@ shared_scripts {
     'shared/*.lua',
 }
 
-client_script 'client.lua'
-server_script 'server.lua'
+client_scripts {
+    'bridge/client.lua',
+    'client.lua'
+}
+
+server_scripts {
+    'bridge/server.lua',
+    'server.lua'
+}
 
 dependencies {
     '/onesync',
