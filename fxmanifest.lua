@@ -23,5 +23,6 @@ server_scripts {
 dependencies {
     '/onesync',
     'ox_lib',
+    'snappy-phone',
     'cad-pedspawner' -- https://github.com/cadburry6969/cad-pedspawner
 }
