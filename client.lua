@@ -191,7 +191,7 @@ local function polishGems()
 			disabled = count < 1,
 			onSelect = function()
 				lib.hideContext()
-				exports.emotes:playEmoteByCommand('parkingmeter')
+				exports.scully_emotemenu:playEmoteByCommand('parkingmeter')
 				local success = lib.progressBar({
 					duration = math.random(10000, 15000),
 					label = 'Polishing ' .. data.label,
@@ -203,7 +203,7 @@ local function polishGems()
 					},
 					stages = {},
 				})
-				exports.emotes:cancelEmote()
+				exports.scully_emotemenu:cancelEmote()
 				if success then
 					TriggerServerEvent('mining:polishGems', item)
 				end
@@ -264,7 +264,7 @@ local function initiateJob()
 								sendNotify('You dont have enough stones')
 								return
 							end
-							exports.emotes:playEmoteByCommand('mechanic2')
+							exports.scully_emotemenu:playEmoteByCommand('mechanic2')
 							local success = lib.progressBar({
 								duration = math.random(20000, 25000),
 								label = 'Grabbing stones from pocket',
@@ -283,7 +283,7 @@ local function initiateJob()
 									},
 								},
 							})
-							exports.emotes:cancelEmote()
+							exports.scully_emotemenu:cancelEmote()
 							if success then
 								TriggerServerEvent('mining:addSortingMachine')
 							end
@@ -311,7 +311,7 @@ local function initiateJob()
 									sendNotify('You need to add more stones in sorter to collect')
 									return
 								end
-								exports.emotes:playEmoteByCommand('puddle')
+								exports.scully_emotemenu:playEmoteByCommand('puddle')
 								local success = lib.progressBar({
 									duration = math.random(15000, 20000),
 									label = 'Collecting materials from pile',
@@ -323,7 +323,7 @@ local function initiateJob()
 									},
 									stages = {}
 								})
-								exports.emotes:cancelEmote()
+								exports.scully_emotemenu:cancelEmote()
 								if success then
 									TriggerServerEvent('mining:collectSortingMachine')
 								end
@@ -363,7 +363,7 @@ local function initiateJob()
 									sendNotify('You dont have items for smelting')
 									return
 								end
-								exports.emotes:playEmoteByCommand('parkingmeter')
+								exports.scully_emotemenu:playEmoteByCommand('parkingmeter')
 								local success = lib.progressBar({
 									duration = math.random(15000, 20000),
 									label = 'Grabbing raw metal ore from pocket',
@@ -382,7 +382,7 @@ local function initiateJob()
 										},
 									},
 								})
-								exports.emotes:cancelEmote()
+								exports.scully_emotemenu:cancelEmote()
 								if success then
 									TriggerServerEvent('mining:addSmeltingMachine')
 								end
@@ -406,7 +406,7 @@ local function initiateJob()
 									sendNotify('Cannot collect')
 									return
 								end
-								exports.emotes:playEmoteByCommand('lookout')
+								exports.scully_emotemenu:playEmoteByCommand('lookout')
 								local success = lib.progressBar({
 									duration = math.random(10000, 15000),
 									label = 'Collecting metals',
@@ -418,7 +418,7 @@ local function initiateJob()
 									},
 									stages = {},
 								})
-								exports.emotes:cancelEmote()
+								exports.scully_emotemenu:cancelEmote()
 								if success then
 									TriggerServerEvent('mining:collectSmeltingMachine')
 								end
@@ -469,7 +469,7 @@ local function initiateJob()
 									sendNotify('You dont have items for heating')
 									return
 								end
-								exports.emotes:playEmoteByCommand('parkingmeter')
+								exports.scully_emotemenu:playEmoteByCommand('parkingmeter')
 								local success = lib.progressBar({
 									duration = math.random(15000, 20000),
 									label = 'Grabbing raw gemstone ore from pocket',
@@ -488,7 +488,7 @@ local function initiateJob()
 										},
 									},
 								})
-								exports.emotes:cancelEmote()
+								exports.scully_emotemenu:cancelEmote()
 								if success then
 									TriggerServerEvent('mining:addHeatingMachine')
 								end
@@ -512,7 +512,7 @@ local function initiateJob()
 									sendNotify('Cannot collect')
 									return
 								end
-								exports.emotes:playEmoteByCommand('lookout')
+								exports.scully_emotemenu:playEmoteByCommand('lookout')
 								local success = lib.progressBar({
 									duration = math.random(10000, 15000),
 									label = 'Collecting gems',
@@ -524,7 +524,7 @@ local function initiateJob()
 									},
 									stages = {},
 								})
-								exports.emotes:cancelEmote()
+								exports.scully_emotemenu:cancelEmote()
 								if success then
 									TriggerServerEvent('mining:collectHeatingMachine')
 								end
